@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Big Shoulders Display';
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+/* BASIC LAYOUT */
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 45px;
+    color: white;
+    height: 450px;
+    width: 300px;
+}
+.box h1{
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    margin: 20px 0 20px 0;
+}
+.box p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 5rem;
+}
+.one{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: hsl(31, 77%, 52%);
+}
+.two{
+    background-color: hsl(184, 100%, 22%);
+}
+.three{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.button{
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 50px;
+    border: 2px hsl(0, 0%, 95%) solid;
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
+}
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+.btn2{
+    color: hsl(184, 100%, 22%);
+}
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+/* BASIC LAYOUT ENDS HERE */
+
+/* Responsive Layout */
+.button:hover{
+    background: none;
+    border: 2px hsl(0, 0%, 95%) solid;
+    text-decoration: none;
+    color: hsl(0, 0%, 95%);
+}
+@media (max-width: 910px){
+    .box p{
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width: 760px){
+    .container{
+        flex-direction: column;
+        height: 100%;
+    }
+    .one{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .three{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+}
